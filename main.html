@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    // make `mkdocs.yml` parameters available to JS
+    window.config = {
+      convertPlainTexLogos: {{ config.extra.convert_plain_tex_logos | tojson }}
+    };
+  </script>
+{% endblock %}

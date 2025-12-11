@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>TeX logos styling demo</title>
+    <link rel="stylesheet" href="tex-styles.css">
+    <script src="tex-stylizer.js" defer></script>
+    <script>
+        window.config = { convertPlainTexLogos: false };
+    </script>
+</head>
+
+<body style='font-family: Times, "Times New Roman", serif;'>
+
+    <h1>TeX logos styling demo</h1>
+
+    <p>This is a demo page to show how the different LaTeX logo markups render.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>As plain text</th>
+                <th>Result</th>
+                <th>As LaTeX macro</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>XeLaTeX</code></td>
+                <td>XeLaTeX</td>
+                <td><code>\XeLaTeX</code></td>
+                <td>\XeLaTeX</td>
+            </tr>
+            <tr>
+                <td><code>XeTeX</code></td>
+                <td>XeTeX</td>
+                <td><code>\XeTeX</code></td>
+                <td>\XeTeX</td>
+            </tr>
+            <tr>
+                <td><code>LuaLaTeX</code></td>
+                <td>LuaLaTeX</td>
+                <td><code>\LuaLaTeX</code></td>
+                <td>\LuaLaTeX</td>
+            </tr>
+            <tr>
+                <td><code>LuaTeX</code></td>
+                <td>LuaTeX</td>
+                <td><code>\LuaTeX</code></td>
+                <td>\LuaTeX</td>
+            </tr>
+            <tr>
+                <td><code>LaTeX2e</code></td>
+                <td>LaTeX2e</td>
+                <td><code>\LaTeX2e</code></td>
+                <td>\LaTeX2e</td>
+            </tr>
+            <tr>
+                <td><code>LaTeXe</code></td>
+                <td>LaTeXe</td>
+                <td><code>\LaTeXe</code></td>
+                <td>\LaTeXe</td>
+            </tr>
+            <tr>
+                <td><code>LaTeX</code></td>
+                <td>LaTeX</td>
+                <td><code>\LaTeX</code></td>
+                <td>\LaTeX</td>
+            </tr>
+            <tr>
+                <td><code>TeX</code></td>
+                <td>TeX</td>
+                <td><code>\TeX</code></td>
+                <td>\TeX</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="texStyle(true)">
+        Apply Styling
+    </button>
+
+    <button onclick="location.reload()">
+        Reload Page
+    </button>
+
+</body>
+</html>

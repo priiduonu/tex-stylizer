@@ -1,0 +1,104 @@
+/**
+ * @file tex-styles.css
+ * @author priiduonu <priiduonu@github.com>
+ * @description TeX "logo" styles
+ *
+ * https://github.com/priiduonu/tex-stylizer
+ *
+ * inspired by:
+ *
+ * - https://stackoverflow.com/questions/8160514
+ * - https://tess.oconnor.cx/2007/08/tex-poshlet
+ *
+ * kern and drop values taken (mostly) from the 'metalogo' package:
+ *
+ * - https://ctan.org/pkg/metalogo
+ */
+
+/**
+ * common parameters
+ */
+
+.latex, .epsilon {
+    display: inline;
+    /*font-family: Times, "Times New Roman", serif;*/
+    /*font-weight: normal;*/
+}
+
+/**
+ * for LaTeX rised "A"
+ */
+
+.latex sup {
+    font-size: 0.75em;
+    margin-left: -0.36em !important;
+    margin-right: -0.15em;
+    position: static;
+    text-transform: uppercase;
+    vertical-align: 0.5ex;
+}
+
+/**
+ * for TeX dropped "E"
+ */
+
+.latex sub {
+    font-size: 1em;
+    margin-left: -0.1667em !important;
+    margin-right: -0.125em;
+    position: static;
+    text-transform: uppercase;
+    vertical-align: -0.5ex;
+}
+
+/**
+ * for XeTeX reversed "E" (leave less space to "T")
+ * custom margins give better result than defaults
+ */
+
+.xetex {
+    display: inline-block;
+    /*margin-left: -0.125em;*/
+    /*margin-right: -0.1667em;*/
+    margin-left: 0.03334em;
+    margin-right: -0.03334em;
+    text-transform: uppercase;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    vertical-align: 0.01ex;
+}
+
+/**
+ * for XeLaTeX reversed "E" (leave more space to "L")
+ * custom margins give better result than defaults
+ */
+
+.xelatex {
+    display: inline-block;
+    /*margin-left: -0.125em;*/
+    /*margin-right: -0.125em;*/
+    margin-left: 0.03334em;
+    margin-right: 0.0334em;
+    text-transform: uppercase;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    vertical-align: 0.01ex;
+}
+
+/**
+ * for LaTeX2e "2"
+ */
+
+.epsilon {
+    margin-left: 0.15em;
+}
+
+/**
+ * for LaTeX2e "epsilon"
+ */
+
+.epsilon sub {
+    font-style: italic;
+    position: static;
+    vertical-align: -0.35ex;
+}
